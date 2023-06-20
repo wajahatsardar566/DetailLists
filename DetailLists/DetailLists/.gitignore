@@ -1,0 +1,10 @@
+
+obj/
+bin/
+
+.com
+.dll
+.exe
+.o
+.so
+

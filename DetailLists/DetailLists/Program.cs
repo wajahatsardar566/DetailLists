@@ -1,6 +1,4 @@
-﻿using DetailLists.LINQs;
-
-#region DetailListsCustomer
+﻿#region DetailListsCustomer
 List<string> names = new List<string>()
     {
         "Alonso", "Zheng", "Smith", "Jones", "Smythe","Osama",  "Fatimah" , "Saqib",
@@ -172,9 +170,9 @@ List<Customer> customers = new List<Customer>
 #endregion
 
 
-//LearningLinqs.SelectItem(names);
-//LearningLinqs.OrderingQueryResult(names);
-//LearningLinqs.QueringCustomer(customers);
+
+
+
 //LearningLinqs.LinqsProjection(customers);
 //LearningLinqs.AnyMethod(customers);
 //LearningLinqs.AllMethod(customers);
@@ -183,6 +181,10 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.TakeMethod(customers);
 //LearningLinqs.SkipMethod(customers);
 
+//LearningLinqs.SelectItem(names);
+//LearningLinqs.OrderingQueryResult(names);
+//LearningLinqs.QueringCustomer(customers);
+LearningLinqs.insertionSort1(5, arr);
 
 
 
