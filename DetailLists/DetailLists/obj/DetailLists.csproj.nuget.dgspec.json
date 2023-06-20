@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wajahat-int\\source\\repos\\DetailLists\\DetailLists\\DetailLists.csproj": {}
+    "C:\\Users\\wajahat-int\\source\\repos\\git repos\\DetailLists\\DetailLists\\DetailLists.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wajahat-int\\source\\repos\\DetailLists\\DetailLists\\DetailLists.csproj": {
+    "C:\\Users\\wajahat-int\\source\\repos\\git repos\\DetailLists\\DetailLists\\DetailLists.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wajahat-int\\source\\repos\\DetailLists\\DetailLists\\DetailLists.csproj",
+        "projectUniqueName": "C:\\Users\\wajahat-int\\source\\repos\\git repos\\DetailLists\\DetailLists\\DetailLists.csproj",
         "projectName": "DetailLists",
-        "projectPath": "C:\\Users\\wajahat-int\\source\\repos\\DetailLists\\DetailLists\\DetailLists.csproj",
+        "projectPath": "C:\\Users\\wajahat-int\\source\\repos\\git repos\\DetailLists\\DetailLists\\DetailLists.csproj",
         "packagesPath": "C:\\Users\\wajahat-int\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wajahat-int\\source\\repos\\DetailLists\\DetailLists\\obj\\",
+        "outputPath": "C:\\Users\\wajahat-int\\source\\repos\\git repos\\DetailLists\\DetailLists\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wajahat-int\\AppData\\Roaming\\NuGet\\NuGet.Config",
