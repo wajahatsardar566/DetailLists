@@ -38,15 +38,17 @@
         }
         public static void QueringCustomer(List<Customer> Customers)
         {
+            // Decending Order by the last alphabet of the world
             var CustomerList = Customers.OrderByDescending(x => x.Country.Substring(x.Country.Count() - 1)).Where(x => x.Region == "Asia").Select(x => new { x.Country, x.City, x.Sales });
             foreach (var customer in CustomerList)
                 Console.WriteLine(customer);
         }
-
         public static void SelectDistinctQuery(List<Customer> Customers)
         {
+            // Distict for removing duplicat
             var queryResult = Customers.Select(x => x.Region).Distinct();
         }
+        
 
     }
 }
