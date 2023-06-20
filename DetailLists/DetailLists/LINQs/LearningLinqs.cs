@@ -112,15 +112,27 @@
         public static void GroupQuery(List<Customer> customers)
         {
             var queryResult = customers.GroupBy(c => c.Region)
-                .Select(cg => new
-                {
-                    TotalSales = cg.Sum(c => c.Sales),
-                    Region = cg.Key
-                });
+                 .Select(cg => new
+                 {
+                     TotalSales = cg.Sum(c => c.Sales),
+                     Region = cg.Key
+                 });
 
             var orderedResults = queryResult.OrderByDescending(cg => cg.TotalSales);
 
             foreach (var c in orderedResults)
+                Console.WriteLine(c);
+        }
+        public static void TakeMethod(List<Customer> customers)
+        {
+            var Customers = customers.Select(x => x);
+            foreach (var c in Customers.Take(5))
+                Console.WriteLine(c);
+        }
+        public static void SkipMethod(List<Customer> customers)
+        {
+            var Customers = customers.Select(x => x);
+            foreach (var c in Customers.Skip(5))
                 Console.WriteLine(c);
         }
     }

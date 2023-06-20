@@ -179,7 +179,10 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.AnyMethod(customers);
 //LearningLinqs.AllMethod(customers);
 //LearningLinqs.MultiLevelOrdering(customers);
-LearningLinqs.GroupQuery(customers);
+//LearningLinqs.GroupQuery(customers);
+//LearningLinqs.TakeMethod(customers);
+//LearningLinqs.SkipMethod(customers);
+
 
 
 
