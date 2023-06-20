@@ -178,7 +178,8 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.LinqsProjection(customers);
 //LearningLinqs.AnyMethod(customers);
 //LearningLinqs.AllMethod(customers);
-
+//LearningLinqs.MultiLevelOrdering(customers);
+LearningLinqs.GroupQuery(customers);
 
 
 

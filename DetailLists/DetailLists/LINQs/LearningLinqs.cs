@@ -92,6 +92,36 @@
                 Console.WriteLine("Not all customers are in Asia");
             }
         }
+        public static void MultiLevelOrdering(List<Customer> customers)
+        {
+            var Customers = customers.OrderBy(c => c.Region)
+                .ThenBy(c => c.Country)
+                .ThenBy(c => c.City)
+                .ThenBy(c => c.Sales)
+                .Select(c => new
+                {
+                    c.Region,
+                    c.Country,
+                    c.City,
+                    c.Sales
+                });
 
+            foreach (var customer in Customers)
+                Console.WriteLine(customer);
+        }
+        public static void GroupQuery(List<Customer> customers)
+        {
+            var queryResult = customers.GroupBy(c => c.Region)
+                .Select(cg => new
+                {
+                    TotalSales = cg.Sum(c => c.Sales),
+                    Region = cg.Key
+                });
+
+            var orderedResults = queryResult.OrderByDescending(cg => cg.TotalSales);
+
+            foreach (var c in orderedResults)
+                Console.WriteLine(c);
+        }
     }
 }
