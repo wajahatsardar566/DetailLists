@@ -4,11 +4,14 @@
     {
         public static void SelectItem(List<string> names)
         {
+            // linqs Query syntax
             var queryResults =
              from n in names
              where n.StartsWith("S")
              select n;
 
+            // linqs method syntax
+            var queryMehodResults = names.Where(item => item.StartsWith("O"));
             foreach (var item in queryResults)
             {
                 Console.WriteLine(item);
@@ -42,7 +45,13 @@
             foreach (var customer in CustomerList)
                 Console.WriteLine(customer);
         }
-
+        public static void LinqsProjection(List<Customer> customers)
+        {
+            // Projection is the technical term for creating a new data type from other data types in a LINQ query.
+            var Customers = customers.Select(x => new { x.Country, x.City, x.Sales });
+            foreach (var customer in Customers)
+                Console.WriteLine(customer);
+        }
         public static void SelectDistinctQuery(List<Customer> Customers)
         {
             var queryResult = Customers.Select(x => x.Region).Distinct();

@@ -170,13 +170,10 @@ List<Customer> customers = new List<Customer>
      }
 };
 #endregion
-
-List<int> arr = new List<int>() { 1, 2, 4, 5, 3 };
-
 //LearningLinqs.SelectItem(names);
 //LearningLinqs.OrderingQueryResult(names);
 //LearningLinqs.QueringCustomer(customers);
-LearningLinqs.insertionSort1(5, arr);
+//LearningLinqs.LinqsProjection(customers);
 
 
 
