@@ -19,7 +19,8 @@
         }
         public static void SelectItemUsingLinqMethodSyntex(List<string> names)
         {
-            var queryResults = names.Where(item => item.StartsWith("O"));
+            // linqs method syntax
+            var queryResults = names.Where(item => item.StartsWith("S"));
 
             foreach (var item in queryResults)
             {
