@@ -92,6 +92,48 @@
                 Console.WriteLine("Not all customers are in Asia");
             }
         }
+        public static void GroupMethod(List<Customer> customers)
+        {
+            var queryResult = customers.GroupBy(c => c.Country)
+                .Select(cg => new
+                {
+                    TotalSales = cg.Sum(c => c.Sales),
+                    Country = cg.Key
+                });
+
+            var orderingQuery = queryResult.OrderByDescending(x => x.TotalSales);
+            foreach (var c in orderingQuery)
+                Console.WriteLine(c);
+        }
+        public static void TakeMethod(List<Customer> customers)
+        {
+            var Customers = customers.GroupBy(c => c.Country)
+                .Select(cg => new
+                {
+                    TotalSales = cg.Sum(c => c.Sales),
+                    Country = cg.Key
+                }).ToList();
+
+            var orderingQuery = Customers.OrderByDescending(x => x.TotalSales);
+
+            foreach (var c in orderingQuery.Take(5))
+                Console.WriteLine(c);
+        }
+        public static void SkipMethod(List<Customer> customers)
+        {
+            var queryResult = customers.GroupBy(c => c.City)
+                .Select(cg => new
+                {
+                    TotalSales = cg.Sum(c => c.Sales),
+                    City = cg.Key
+                });
+
+            var orderingResult = queryResult.OrderByDescending(c => c.TotalSales);
+            foreach (var item in orderingResult.Skip(4))
+            {
+                Console.WriteLine(item);
+            }
+        }
 
     }
 }

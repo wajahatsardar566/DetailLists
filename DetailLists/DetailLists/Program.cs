@@ -178,6 +178,9 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.LinqsProjection(customers);
 //LearningLinqs.AnyMethod(customers);
 //LearningLinqs.AllMethod(customers);
+//LearningLinqs.GroupMethod(customers);
+//LearningLinqs.TakeMethod(customers);
+LearningLinqs.SkipMethod(customers);
 
 
 

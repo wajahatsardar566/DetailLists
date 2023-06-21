@@ -1,6 +1,8 @@
-obj/
-bin/
+DetailLists/.vs/
+DetailLists/DetailLists/bin/
+DetailLists/DetailLists/obj/
 
+*.vs
 *.com
 *.o
 *.so
