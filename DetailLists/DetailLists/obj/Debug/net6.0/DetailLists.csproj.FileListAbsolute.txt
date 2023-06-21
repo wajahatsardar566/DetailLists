@@ -13,3 +13,18 @@ C:\Users\wajahat-int\source\repos\DetailLists\DetailLists\obj\Debug\net6.0\refin
 C:\Users\wajahat-int\source\repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.pdb
 C:\Users\wajahat-int\source\repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.genruntimeconfig.cache
 C:\Users\wajahat-int\source\repos\DetailLists\DetailLists\obj\Debug\net6.0\ref\DetailLists.dll
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\bin\Debug\net6.0\DetailLists.exe
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\bin\Debug\net6.0\DetailLists.deps.json
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\bin\Debug\net6.0\DetailLists.runtimeconfig.json
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\bin\Debug\net6.0\DetailLists.dll
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\bin\Debug\net6.0\DetailLists.pdb
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.csproj.AssemblyReference.cache
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.AssemblyInfoInputs.cache
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.AssemblyInfo.cs
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.csproj.CoreCompileInputs.cache
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.dll
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\refint\DetailLists.dll
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.pdb
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\DetailLists.genruntimeconfig.cache
+C:\Users\wajahat-int\source\repos\git repos\DetailLists\DetailLists\obj\Debug\net6.0\ref\DetailLists.dll

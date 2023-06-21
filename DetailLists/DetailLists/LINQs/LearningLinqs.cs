@@ -19,8 +19,7 @@
         }
         public static void SelectItemUsingLinqMethodSyntex(List<string> names)
         {
-            // linqs method syntax
-            var queryResults = names.Where(item => item.StartsWith("S"));
+            var queryResults = names.Where(item => item.StartsWith("O"));
 
             foreach (var item in queryResults)
             {
@@ -40,9 +39,10 @@
             foreach (var name in result)
                 Console.WriteLine(name);
         }
-        public static void QueringCustomer(List<Customer> Customers)
+        public static void QueringCustomer(List<Customer> customers)
         {
-            var CustomerList = Customers.OrderByDescending(x => x.Country.Substring(x.Country.Count() - 1)).Where(x => x.Region == "Asia").Select(x => new { x.Country, x.City, x.Sales });
+            // Decending Order by the last alphabet of the world
+            var CustomerList = customers.OrderByDescending(x => x.Country.Substring(x.Country.Count() - 1)).Where(x => x.Region == "Asia").Select(x => new { x.Country, x.City, x.Sales });
             foreach (var customer in CustomerList)
                 Console.WriteLine(customer);
         }
@@ -53,9 +53,44 @@
             foreach (var customer in Customers)
                 Console.WriteLine(customer);
         }
-        public static void SelectDistinctQuery(List<Customer> Customers)
+        public static void SelectDistinctQuery(List<Customer> customers)
         {
-            var queryResult = Customers.Select(x => x.Region).Distinct();
+            // Distict for removing duplicat
+            var queryResult = customers.Select(x => x.Region).Distinct();
+        }
+        public static void AnyMethod(List<Customer> customers)
+        {
+
+            // The LINQ Any() method applies the lambda expression you pass to it — c => c.Country == "USA"
+            // against the data in the customers list
+            // and returns true if the lambda expression is true for any of the customers in the list.
+
+            bool anyUSA = customers.Any(c => c.Country == "USA");
+            if (anyUSA)
+            {
+                Console.WriteLine("Some customers are in the USA");
+            }
+            else
+            {
+                Console.WriteLine("No customers are in the USA");
+            }
+        }
+        public static void AllMethod(List<Customer> customers)
+        {
+
+            //The LINQ All() method applies the lambda expression against the data set and returns false, as
+            //you would expect, because some customers are outside of Asia. You then print the appropriate
+            //message based on the value of allAsia.
+
+            bool allAsia = customers.All(c => c.Region == "Asia");
+            if (allAsia)
+            {
+                Console.WriteLine("All customers are in Asia");
+            }
+            else
+            {
+                Console.WriteLine("Not all customers are in Asia");
+            }
         }
 
     }
