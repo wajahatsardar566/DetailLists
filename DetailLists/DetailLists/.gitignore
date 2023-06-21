@@ -2,7 +2,9 @@ DetailLists/.vs/
 DetailLists/DetailLists/bin/
 DetailLists/DetailLists/obj/
 
-*.vs
+../.vs
+.vs/
+
 *.com
 *.o
 *.so

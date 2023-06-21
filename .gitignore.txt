@@ -1,22 +1,15 @@
-obj/
-bin/
+DetailLists/.vs/
+DetailLists/DetailLists/bin/
+DetailLists/DetailLists/obj/
+
+DetailLists/bin/
+DetailLists/obj/
 .vs/
-
-*.vs
-*.com
-*.o
-*.so
-*.vsidx
-*.cache
-*.log
-*.suo
-*.vsidx
-
-# Ignore DLL files
-*.dll
-
-# Ignore JSON files
-*.json
-
-# Ignore EXE files
-*.exe
+# Exclude all files
+*
+# Include directories
+!*/
+# Include .cs files
+!*.cs
+!*.csproj
+!*.sln
