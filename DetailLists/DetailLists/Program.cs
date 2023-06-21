@@ -1,4 +1,6 @@
-﻿#region DetailListsCustomer
+﻿using DetailLists.LINQs;
+
+#region DetailListsCustomer
 List<string> names = new List<string>()
     {
         "Alonso", "Zheng", "Smith", "Jones", "Smythe","Osama",  "Fatimah" , "Saqib",
@@ -170,21 +172,13 @@ List<Customer> customers = new List<Customer>
 #endregion
 
 
-
-
-
-//LearningLinqs.LinqsProjection(customers);
-//LearningLinqs.AnyMethod(customers);
-//LearningLinqs.AllMethod(customers);
-//LearningLinqs.MultiLevelOrdering(customers);
-//LearningLinqs.GroupQuery(customers);
-//LearningLinqs.TakeMethod(customers);
-//LearningLinqs.SkipMethod(customers);
-
 //LearningLinqs.SelectItem(names);
 //LearningLinqs.OrderingQueryResult(names);
 //LearningLinqs.QueringCustomer(customers);
-LearningLinqs.insertionSort1(5, arr);
+//LearningLinqs.LinqsProjection(customers);
+//LearningLinqs.AnyMethod(customers);
+//LearningLinqs.AllMethod(customers);
+
 
 
 
