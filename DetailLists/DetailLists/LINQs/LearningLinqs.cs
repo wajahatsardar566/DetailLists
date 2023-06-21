@@ -42,9 +42,16 @@
         public static void QueringCustomer(List<Customer> customers)
         {
             // Decending Order by the last alphabet of the world
-            var CustomerList = customers.OrderByDescending(x => x.Country.Substring(x.Country.Count() - 1)).Where(x => x.Region == "Asia").Select(x => new { x.Country, x.City, x.Sales });
+            var CustomerList = customers
+                .Where(x => x.Region == "Asia")
+                .OrderByDescending(x => x.Country?.LastOrDefault())
+                .Select(x => new { x.Country, x.City, x.Sales });
+
             foreach (var customer in CustomerList)
-                Console.WriteLine(customer);
+            {
+                Console.WriteLine($"{customer.Country}, {customer.City}, {customer.Sales}");
+            }
+
         }
         public static void LinqsProjection(List<Customer> customers)
         {
@@ -134,6 +141,21 @@
                 Console.WriteLine(item);
             }
         }
+        public static void FirstMethod(List<Customer> customers)
+        {
+            // It returns only first value it founds so we don't need to use loops for iteration
+            // It returns single value 
+            // Throw exception if it did't find the value 
+
+            var singleCustomer = customers.First(x => x.Region == "Asia");
+            Console.WriteLine(singleCustomer);
+        }
+        public static void FirstOrDefaultMethod(List<Customer> customers)
+        {
+            var Customers = customers.FirstOrDefault(x => (x.Region ?? "").Contains("Asia"));
+            Console.WriteLine(Customers);
+        }
+
 
     }
 }

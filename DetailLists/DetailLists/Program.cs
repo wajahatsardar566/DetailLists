@@ -180,7 +180,9 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.AllMethod(customers);
 //LearningLinqs.GroupMethod(customers);
 //LearningLinqs.TakeMethod(customers);
-LearningLinqs.SkipMethod(customers);
+//LearningLinqs.SkipMethod(customers);
+//LearningLinqs.FirstMethod(customers);
+LearningLinqs.FirstOrDefaultMethod(customers);
 
 
 
