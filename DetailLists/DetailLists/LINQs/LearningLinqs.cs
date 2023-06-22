@@ -105,6 +105,7 @@
                 .Select(cg => new
                 {
                     TotalSales = cg.Sum(c => c.Sales),
+                    Count = cg.Count(),
                     Country = cg.Key
                 });
 
@@ -154,6 +155,48 @@
         {
             var Customers = customers.FirstOrDefault(x => (x.Region ?? "").Contains("Asia"));
             Console.WriteLine(Customers);
+        }
+
+        public static void JoinMethod(List<Customer> customers, List<Order> orders)
+        {
+
+            // Using Linqs Query Syntax
+            //var queryResults =
+            //    from c in customers
+            //    join o in orders on c.ID equals o.ID
+            //    select new
+            //    {
+            //        c.ID,
+            //        c.City,
+            //        SalesBefore = c.Sales,
+            //        NewOrder = o.Amount,
+            //        SalesAfter = c.Sales + o.Amount
+            //    };
+
+            //foreach (var item in queryResults)
+            //    Console.WriteLine(item);
+
+
+            // using linqs method syntax
+            var queryResult = customers
+                .Join(
+                    orders,
+                    c => c.ID,
+                    o => o.ID,
+                    (c, o) => new
+                    {
+                        c.ID,
+                        c.Region,
+                        c.Country,
+                        c.City,
+                        SalesBefore = c.Sales,
+                        newOrder = o.Amount,
+                        SalesAfter = c.Sales + o.Amount
+                    });
+
+            foreach (var item in queryResult)
+                Console.WriteLine(item);
+
         }
 
 

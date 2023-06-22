@@ -170,7 +170,21 @@ List<Customer> customers = new List<Customer>
      }
 };
 #endregion
-
+#region 
+List<Order> orders = new List<Order> {
+ new Order { ID="P", Amount=100 },
+ new Order { ID="Q", Amount=200 },
+ new Order { ID="R", Amount=300 },
+ new Order { ID="S", Amount=400 },
+ new Order { ID="T", Amount=500 },
+ new Order { ID="U", Amount=600 },
+ new Order { ID="V", Amount=700 },
+ new Order { ID="W", Amount=800 },
+ new Order { ID="X", Amount=900 },
+ new Order { ID="Y", Amount=1000 },
+ new Order { ID="Z", Amount=1100 }
+ };
+#endregion
 
 //LearningLinqs.SelectItem(names);
 //LearningLinqs.OrderingQueryResult(names);
@@ -182,7 +196,8 @@ List<Customer> customers = new List<Customer>
 //LearningLinqs.TakeMethod(customers);
 //LearningLinqs.SkipMethod(customers);
 //LearningLinqs.FirstMethod(customers);
-LearningLinqs.FirstOrDefaultMethod(customers);
+//LearningLinqs.FirstOrDefaultMethod(customers);
+LearningLinqs.JoinMethod(customers, orders);
 
 
 
